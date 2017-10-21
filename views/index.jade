@@ -1,2 +1,20 @@
-.div
-    测试界面
+extends ./layouts/default
+block header
+    title 附近网点
+    style.
+        .distance {
+            float: right;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .weui_media_box.weui_media_appmsg .weui_media_hd {
+            width: 120px;
+            height: 60px;
+        }
+//block head
+  h1.page_title 附近网点
+block main
+    .weui_panel.weui_panel_access
+        .weui_panel_hd
+            span 附近网点

@@ -1,0 +1,45 @@
+//base(href="#{contextFront}")
+meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+meta(charset='utf-8')
+meta(name='keywords', content='')
+meta(name='description', content='')
+meta(name='format-detection', content='telephone=no,email=no')
+meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui')
+meta(name='apple-mobile-web-app-capable', content='yes')
+meta(name='apple-mobile-web-app-status-bar-style', content='grey')
+meta(name='screen-orientation', content='portrait')
+meta(name='x5-orientation', content='portrait')
+meta(http-equiv='pragma', content='no-cache')
+//link(href='/themes/dist/images/icon.png', rel='apple-touch-icon-precomposed')
+//link(href='/themes/dist/images/icon.png', rel='Shortcut Icon', type='image/x-icon')
+//link(rel='stylesheet', href='css/reset.min.css')
+//link(rel='stylesheet', href='css/ratchet.min.css')
+//link(rel='stylesheet', href='css/theme-ios.min.c  ss')
+//link(rel='stylesheet', href='css/loaders.min.cs s')
+
+//link(rel='stylesheet', href='#{theme}/dist/lib/weui.min.css')
+//link(rel='stylesheet', href='#{theme}/dist/css/jquery-weui.min.css')
+//link(rel='stylesheet', href='#{theme}/dist/css/base.css')
+
+
+link(rel='stylesheet', href='//cdn.bootcss.com/weui/1.1.1/style/weui.min.css')
+link(rel='stylesheet', href='//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css')
+
+script(type='text/javascript').
+
+//script.
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        docEl.style.fontSize = (24 * clientWidth / 627) + 'px';
+      };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    //doc.addEventListener('DOMContentLoaded', recalc, false);
+    recalc();
+  })(document, window);
+//if (req.session.channel && req.session.channel.analystScript)
+//  !{req.session.channel.analystScript}

@@ -62,6 +62,7 @@
     "install": "^0.8.4",
     "ioredis": "^2.4.3",
     "jade": "^1.11.0",
+    "jquery-weui": "^1.0.1",
     "jsonwebtoken": "^6.2.0",
     "lodash": "^4.17.3",
     "log4js": "1.1.1",
